@@ -1,0 +1,15 @@
+@media (max-width:430px) {
+    .container {
+        grid-template-areas: 
+        "featured-video"
+        "advertising"
+        "recommended-videos";
+        grid-template-columns: minmax(300px, auto);
+        grid-template-rows: minmax(300px, auto);
+        padding: 15px;
+    }
+
+    .advertising img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "featured-video advertising" 
+    "featured-video recommended-videos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    background-color: #F7F7F7;
+    max-width: 900px;
+    gap: 20px;
+    padding: 35px;
+}
+
+.featured-video {
+    grid-area: featured-video;
+}
+
+.advertising {
+    grid-area: advertising;
+}
+
+.recommended-videos {
+    grid-area: recommended-videos;
+}
+
+.featured-video img {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.featured-video .title {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.featured-video .views {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.recommended-videos .video {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.recommended-videos .video .title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.recommended-videos .video p {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
